@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #45da35;
+    font-family: fantasy;
+}
+
+.menu{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #f5f906;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+}
+
+img{
+    width: 90px;
+    height: 70px
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 40px;
+    float: left;
+    padding: 30px 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #513252;
+    font-style: normal;
+    font-size: 0.6cm;
+}
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0;
+    background: #7A4069;
+    height: 10px;
+    top: 0;
+    position: absolute;
+    transition: 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+
+}
+
+.contenedor{
+    width: 1200px;
+    height: 450px;
+    background-color: #bc8565;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 2%;
+    border-style: dotted;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    color: #513252;
+    font-style: normal;
+}
+
+.tareasPorHacer{
+    float: left;
+    width: 380px;
+    height: 410px;
+    background-color: #8ec5ff;
+    margin: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 2%;
+    border-style: dotted solid;
+    text-align: center;
+    font-style: normal;
+    padding: 20px;
+    color: #412842;
+    font-style: normal;
+    font-size: 0.6cm;
+}
+
+.tareasEnProceso{
+    float: none;
+    width: 380px;
+    height: 410px;
+    background-color: #8ec5ff;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 2%;
+    border-style: dotted solid;
+    text-align: center;
+    font-style: normal;
+    color: #412842;
+    font-style: normal;
+    font-size: 0.6cm;
+}
+
+.tareasRealizadas{
+    float: right;
+    width: 380px;
+    height: 400px;
+    background-color: #8ec5ff;
+    margin: right;
+    margin-right: 20px;
+    margin-top: -400px;
+    padding: 40px;
+    border-radius: 2%;
+    border-style: dotted solid;
+    text-align: center;
+    color: #412842;
+    font-style: normal;
+    font-size: 0.6cm;
+    position: relative;
+}
+
+
+.tareasPorHacer:hover{
+    background-color: #f3b5ca;
+}
+
+.tareasEnProceso:hover{
+    background-color: #f3b5ca;
+}
+
+.tareasRealizadas:hover{
+    background-color: #f3b5ca;
+}
+
+body{
+    overflow: auto;
+}
